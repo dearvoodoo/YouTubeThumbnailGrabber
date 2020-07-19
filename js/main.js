@@ -3,14 +3,14 @@
         if (e.which == 13) {
             $('#button-addon3').html('<i class=\'fal fa-spinner fa-spin\'></i>')
             var id = YouTubeGetID($('#YTThumb').val())
-            pageUrl = window.location.href + "?id=" + id
+            pageUrl = location.protocol + '//' + location.host + location.pathname + "?id=" + id
             window.location = pageUrl
         }
     })
     $('#button-addon3').click(function() {
         $('#button-addon3').html('<i class=\'fal fa-spinner fa-spin\'></i>')
         var id = YouTubeGetID($('#YTThumb').val())
-        pageUrl = window.location.href + "?id=" + id
+        pageUrl = location.protocol + '//' + location.host + location.pathname + "?id=" + id
         window.location = pageUrl
     });
 
